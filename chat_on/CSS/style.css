@@ -1,0 +1,78 @@
+ .w-400{
+    width: 400px;
+ } 
+
+ .fs-xs{
+    font-size: 1rem;
+ }
+
+ .w-10{
+   width: 10%;
+ }
+
+ .w-15{
+   width: 15%;
+ }
+
+ .fs-sm{
+   font-size: 1.4rem;;
+ }
+
+ .mess_box{
+   text-decoration: none;
+ }
+
+ .fs-big{
+    font-size: 5rem !important;
+ }
+ 
+ .online{
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 100%;
+ }
+
+ small{
+   color:#bbb;
+   font-size: 0.7rem;
+   text-align: right;
+ }
+
+ .rtext{
+   width: 65%;
+   background: #f8f8fa;
+   color: #444;
+ }
+
+ .ltext{
+   width: 65%;
+   background: #3289c8;
+   color: #fff;
+ }
+ 
+ .chat-box{
+   overflow-y: auto;
+   overflow-x: hidden;
+   max-height: 50vh;
+ }
+
+ *::-webkit-scrollbar{
+   width: 3px;
+ }
+
+ *::-webkit-scrollbar-track{
+   background: #f1f1f1;
+ }
+
+ *::-webkit-scrollbar-thumb{
+   background: #aaa;
+ }
+
+ *::-webkit-scrollbar-thumb:hover{
+   background: #3289c8;
+ }
+
+ textarea{
+   resize: none;
+ }
