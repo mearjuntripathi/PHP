@@ -2,7 +2,9 @@
 const roomHash = location
   
 // TODO: Replace with your own channel ID
-const drone = new ScaleDrone('oqStbsXh7ZYSZZiC');
+//signin on SCALEDRONE
+//and use channel id and paste it frome there
+const drone = new ScaleDrone('');
 // Room name needs to be prefixed with 'observable-'
 const roomName = 'observable-' + roomHash;
 const configuration = {
