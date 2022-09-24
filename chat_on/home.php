@@ -72,7 +72,8 @@
             <ul id="chatlist"
                 class= "list-group
                         mvh-50 
-                        overflow-auto">
+                        overflow-auto"
+                style="max-height: 75vh; overflow-y: auto; overflow-x: hidden">
                 <?php if(!empty($conversation)){ ?>
                     <?php 
                         foreach($conversation as $conversation){ 

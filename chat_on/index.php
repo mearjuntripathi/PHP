@@ -81,6 +81,14 @@
 
             <a href="signup.php" style="float: right">Sign up</a>
         </form>
+        <br>
+        <center>
+            © Copyright, ChatOn
+            <br>
+            BY
+            <br>
+            <a href="https://www.linkedin.com/in/arjun-tripathi-478b77204">Arjun Tripathi</a>
+        </center>
     </div>
 </body>
 </html>

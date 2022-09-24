@@ -78,7 +78,10 @@
                             <small class="d-block p-1">last seen: <?=last_seen($chatWith['last_seen'])?></small>
                          <?php }?>
                     </div>
-                </h3>        
+                </h3>   
+                &emsp;&emsp;&emsp;&emsp;&emsp;  
+                    <a href="Video-Call-121/" style="text-decoration:none;">
+                        <i class="fa fa-camera" style="font-size:30px;color:green;float:right"></i></a>   
             </div>
             <div class="shadow p-4 rounded
                         d-flex flex-column
