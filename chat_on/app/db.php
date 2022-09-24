@@ -1,11 +1,11 @@
 <?php
-    $host="localhost:3306";
+    $host="";
 
-    $username="root";
+    $username="";
     
     $pass="";
     
-    $db="chat_on";
+    $db="";
     
     $connection = mysqli_connect($host,$username,$pass,$db);
 ?>
