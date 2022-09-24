@@ -2,7 +2,7 @@
 PHP project
 ## Chat Application
 
-#### mysql commands 
+#### mysql commands (for creating a database related topic)
 <pre>
 CREATE TABLE users (userid INT(10) NOT NULL AUTO_INCREMENT , name VARCHAR(50) NOT NULL , username VARCHAR(50) NOT NULL , password VARCHAR(50) NOT NULL , pp VARCHAR(50) NOT NULL DEFAULT 'user.png' , last_seen DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (userid), UNIQUE (username));
 
