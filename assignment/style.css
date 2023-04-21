@@ -1,0 +1,118 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:box-shadow;
+    font-family: Arial, Helvetica;
+   }
+
+.header{
+    font-family: Arial, Helvetica;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 0);
+    box-shadow: 0px 10px 5px rgb(253, 241, 101);
+    padding: 20px;
+}
+
+#tag{
+    font-size: xx-large;
+}
+
+.logo{
+    width:10cm;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #fab8b8;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #19b51e;
+    color: rgb(255, 255, 255);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    color: black;
+    background-color: #03ff0f;
+  }
+  
+  .container {
+    margin: 150px 350px;
+    border-radius: 30px;
+    background-color: #6d83ff;
+    padding: 60px;
+    box-shadow: 10px 10px 10px 10px rgb(50, 50, 84);
+  }
+
+  .warning{
+    margin: 50px 750px;
+    width: 300px;
+    background-color: #ff4a43;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: xx-large;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 10px rgb(242, 113, 108);
+  }
+
+  .userdata{
+  box-shadow: 0 4px 8px 12px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-size: xx-large;
+  font-family: arial;
+  }
+
+  .title {
+  color: rgb(22, 238, 6);
+  font-size: 18px;
+}
+
+a{
+    font-size:medium;
+}
+
+button{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  background-color: #e43030;
+  text-align: center;
+  border-radius: 15px;
+  width: 30%;
+  font-size: 18px;
+}
+button:hover{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  background-color: #c90000;
+  border-radius: 15px;
+
+  text-align: center;
+  width: 30%;
+  font-size: 18px;
+}
+
+p{
+  font-size: medium;
+  padding: 30px;
+}
+
