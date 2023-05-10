@@ -12,7 +12,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
 }
 
 /* make from lable */
@@ -48,5 +47,30 @@
 }
 
 .w-15{
-    width: 5%;
+    width: 2cm;
 }
+
+.font{
+    color: black;
+    font-size: large;
+}
+
+.font:hover{
+    color: rgb(33, 92, 255);
+    font-family: monospace;
+    font-size: large;
+    text-decoration: underline;
+}
+
+.vh-75{
+    height: 75vh;
+}
+
+/* @media only screen and (max-width: 600px) {
+    .card-holder{
+        display: grid;
+    }
+    .card{
+        width: 80%;
+    }
+} */

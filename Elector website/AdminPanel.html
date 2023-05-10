@@ -8,26 +8,81 @@
           rel="stylesheet" 
           integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
           crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     
     <link rel="icon" href="image/vote.jpg">
     
     <link rel="stylesheet" href="css/style.css">
     <title>Chunav</title>
 </head>
-<body class="d-flex
-             justify-content-center">
+
+<body>
+
+    <!-- this is nav bar on dashboard -->
+
+    <nav class="navbar navbar-expand-lg navbar-light light-dark shadow " id="fixed">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex" href="#">
+                <i class="social-icon"><img class="rounded-circle" style="width:15%"
+                        src="./image/member_voting.png" alt="AVATAR">
+                </i>
+            </a>
+            <div class="chunav" style="margin-right: 20%; font-size: xx-large;">
+                CHUNAV
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             
-    <div class="w-100 p-5 shadow">
-        <div class="d-flex
-                    
-                    grid-column">
-
-            <img src="image/member_voting.png" 
-                    class="w-15">
-
-                <h3 class="chunav">
-                        Chunav</h3>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="form-white input-group" style="width: 250px;">
+                </div>
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger font" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger font" href="#">Registration</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger font" href="#">View Candidate</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger font" href="#">logout</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
+
+    <div class="d-flex
+                justify-content-around
+                align-items-center
+                vh-75
+                flex-wrap">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./image/candidate.png" alt="Candidates">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Candidates</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./image/voters.jpg" alt="Voters">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Voters</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./image/votes.jpg" alt="Vote">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">votes</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
     </div>
+
 </body>
 </html>
