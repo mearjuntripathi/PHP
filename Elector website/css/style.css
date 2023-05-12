@@ -65,13 +65,12 @@
 }
 
 .font {
-    color: rgb(242, 242, 242);
     text-align: end;
     font-size: large;
 }
 
 .font:hover {
-    color: rgb(74, 111, 215);
+    color: rgb(19, 82, 255);
     font-family: monospace;
     font-size: large;
     text-decoration: underline;
