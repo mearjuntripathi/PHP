@@ -1,0 +1,5 @@
+<?phph
+
+echo "hello world";
+
+?>
