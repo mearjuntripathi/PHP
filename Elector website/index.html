@@ -2,65 +2,106 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <link rel="icon" href="image/vote.jpg">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="css/style.css">
-    <title>CHUNAV - Dashboard</title>
+  <link rel="icon" href="image/vote.jpg">
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>Chunav</title>
 </head>
 
 <body>
-    <div class="fixed">
-    <a class="navbar-brand chunav fs-2" href="#">
+
+  <!-- this is nav bar on dashboard -->
+  <nav class="navbar navbar-expand-lg navbar-light text-light bg-secondary py-5">
+    <div class="container-fluid">
+      <a class="navbar-brand chunav fs-1" href="#">
         <img src="image/member_voting.png" alt="" width="75" height="75"
           class="d-inline-block align-text-top rounded-circle">
         CHUNAV
       </a>
-    <div class="sidebar">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+      <button class="navbar-toggler btn btn-outline-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon btn btn-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ms-auto me-3 text-end align-items-end">
+          <li class="nav-item"><a class="nav-link js-scroll-trigger font" href="#about">Home</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger font" href="#experience">Candidate registration</a>
+          </li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger font" href="#education">View candidate</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger font" href="#skill">View voters</a></li>
+          <li class="nav-item"><button class="nav-link js-scroll-trigger text-light btn btn-outline-warning" href="#skill">
+              LOGOUT</button></li>
+        </ul>
       </div>
     </div>
-      <div class="content">
-        <div class="d-flex
+  </nav>
+
+  <div class="d-flex
                 justify-content-around
                 align-items-center
                 vh-75
                 flex-wrap">
-
-    <div class="card" style="width: 20rem;">
+    <div class="card" style="width: 40rem;">
+      <!-- <img class="card-img-top" src="image/candidate.png" alt="Candidates"> -->
       <div class="card-body">
+        <h1 class="card-title" style="text-align: center;">Voting Status</h1>
+        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+      </div>
+    </div>
+
+    <div class="card" style="width: 30rem;">
+      <img class="card-img-top" src="image/Candidates.jpg" alt="Voters">
+      <div class="card-body text-center">
         <h1 class="card-title" style="text-align: center;">Candidates</h1>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <a href="#" class="btn btn-primary">View Candidate &#8594;</a>
       </div>
     </div>
 
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="image/voters.jpg" alt="Voters">
-      <div class="card-body">
-        <h1 class="card-title" style="text-align: center;">Voters</h1>
-        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a> -->
-      </div>
-    </div>
-
-    <div class="card" style="width: 20rem;">
+    <div class="card" style="width: 30rem;">
       <img class="card-img-top" src="image/votes.jpg" alt="Vote">
-      <div class="card-body">
-        <h1 class="card-title" style="text-align: center;">votes</h1>
-        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a> -->
+      <div class="card-body text-center">
+        <h1 class="card-title" style="text-align: center;">voters</h1>
+        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <a href="#" class="btn btn-primary">View Voters &#8594;</a>
       </div>
     </div>
   </div>
 
-      </div>
+</body>
+
 </html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script>
+  const xValues = [50,60,70,80,90,100,110,120,130,140,150];
+  const yValues = [7,8,8,9,9,9,10,11,14,14,15];
+  
+  new Chart("myChart", {
+    type: "line",
+    data: {
+      labels: xValues,
+      datasets: [{
+        fill: false,
+        lineTension: 0,
+        backgroundColor: "rgba(0,0,255,1.0)",
+        borderColor: "rgba(0,0,255,0.1)",
+        data: yValues
+      }]
+    },
+    options: {
+      legend: {display: false},
+      scales: {
+        yAxes: [{ticks: {min: 6, max:16}}],
+      }
+    }
+  });
+  </script>
