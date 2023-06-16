@@ -15,26 +15,29 @@
 </head>
 
 <body>
-  <div class="fixed">
+  <div class="header">
     <a class="navbar-brand chunav fs-2" href="#">
       <img src="../image/member_voting.png" alt="" width="75" height="75"
         class="d-inline-block align-text-top rounded-circle">
       CHUNAV
     </a>
+
+    <div class="btn-group dropup">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropup</button>
+      <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Action</a>
+          <a href="#" class="dropdown-item">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">LOGOUT</a>
+      </div>
+  </div>
+  </div>
+  <div class="fixed">
     <div class="sidebar">
       <a class="active" href="#home">Home</a>
       <a href="#news">News</a>
       <a href="#contact">Contact</a>
       <a href="#about">About</a>
-      <div class="btn-group dropup logout">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropup</button>
-        <div class="dropdown-menu">
-            <a href="#" class="dropdown-item">Action</a>
-            <a href="#" class="dropdown-item">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">LOGOUT</a>
-        </div>
-    </div>
     </div>
   </div>
   <div class="content">

@@ -1,181 +1,189 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* login page make background this design */
 .start {
-    background-image: url("../image/ElectionBackground.jpg");
-    height: 100%;
+  background-image: url("../image/ElectionBackground.jpg");
+  height: 100%;
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* make from lable */
 .form {
-    color: white;
+  color: white;
 }
 
 .w-50 {
-    border-radius: 50px;
+  border-radius: 50px;
 }
 
-.w-25{
-    border-radius: 25px;
+.w-25 {
+  border-radius: 25px;
 }
 
 #picture {
-    box-shadow: 3px 3px rgb(247, 112, 112);
+  box-shadow: 3px 3px rgb(247, 112, 112);
 }
 
 .w-800 {
-    width: 800px;
-    max-width: 90%;
+  width: 800px;
+  max-width: 90%;
 }
 
 .w-400 {
-    width: 400px;
-    backdrop-filter: blur(15px);
-    border-radius: 50px;
+  width: 400px;
+  backdrop-filter: blur(15px);
+  border-radius: 50px;
 }
 
 .form-control {
-    border-color: rgb(255, 98, 31);
-    font-family: 'Courier New';
+  border-color: rgb(255, 98, 31);
+  font-family: 'Courier New';
 }
 
 .form-control:hover {
-    border-color: green;
+  border-color: green;
 }
 
 .chunav {
-    color: rgb(255, 81, 6);
-    font-weight: bolder;
+  color: rgb(255, 81, 6);
+  font-weight: bolder;
 }
 
 .chunav:hover {
-    color: rgb(80, 253, 0);
+  color: rgb(80, 253, 0);
 }
 
 .w-15 {
-    width: 2cm;
+  width: 2cm;
 }
 
 .font {
   color: white;
-    text-align: end;
-    font-size: large;
+  text-align: end;
+  font-size: large;
 }
 
 .font:hover {
-    color: rgb(19, 82, 255);
-    font-family: monospace;
-    font-size: large;
-    text-decoration: underline;
+  color: rgb(19, 82, 255);
+  font-family: monospace;
+  font-size: large;
+  text-decoration: underline;
 }
 
 .vh-75 {
-    height: 75vh;
+  height: 75vh;
 }
 
 .hr {
-    color: black;
+  color: black;
 }
 
 /* registration form css */
 .gradient-custom {
-    /* fallback for old browsers */
-    background-image: url("../image/ElectionBackground.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* fallback for old browsers */
+  background-image: url("../image/ElectionBackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card-registration .select-input.form-control[readonly]:not([disabled]) {
-    font-size: 1rem;
-    line-height: 2.15;
-    padding-left: .75em;
-    padding-right: .75em;
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
 }
 
 .card-registration .select-arrow {
-    top: 13px;
+  top: 13px;
 }
 
 
 /* complete */
 
-
 /* side nav bar connecept */
 body {
-    margin: 0;
-    font-family: "Lato", sans-serif;
-  }
-  .fixed{
-    position: fixed;
-  }
-  
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sidebar {
+  margin: 90px 0px;
+  padding: 0;
+  width: 250px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 91%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 250px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
   .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 250px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 91%;
-    overflow: auto;
+    width: 100%;
+    height: auto;
+    position: relative;
   }
 
-  .logout{
-    position: absolute;
-    bottom: 0px;
-    width: 250px;
+  .fixed {
+    width: 100%;
+    height: auto;
+    position: relative;
   }
 
   .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
+    float: left;
+    position: relative;
   }
-   
-  .sidebar a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
-  
+
   div.content {
-    margin-left: 250px;
-    padding: 1px 16px;
-    height: 1000px;
+    margin-left: 0;
   }
-  
-  @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      max-height: 30vh;
-      /* min-height: 30vh; */
-      position: relative;
-    }
-    .fixed{
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
+
+}
+
+@media screen and (max-width: 000px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
   }
-  
-  @media screen and (max-width: 000px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-  }
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  margin: 0;
+}
